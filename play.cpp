@@ -27,7 +27,7 @@ namespace bullpgia {
 			if (guess==choice) {
 				return indexOfTurn + 1; 
 			} else {
-				auto reply = calculateBullAndPgia(choice, guess);
+				auto reply = calculateBull_And_Cows(choice, guess);
 				guesser.learn(reply); // tell the guesser how many bull and pgia were in its latest guess
 			}
 		}
