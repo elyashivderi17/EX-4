@@ -24,7 +24,7 @@ int Count_Bull =0;
         
     }
 
-string ans = to_string(Count_Pgia)+","+to_string(Count_Bull);
+string ans = to_string(Count_Pgia)+" , "+to_string(Count_Bull);
 
     return ans;
 }

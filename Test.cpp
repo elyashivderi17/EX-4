@@ -30,8 +30,8 @@ int main() {
 		ConstantGuesser g1234{"1234"}, g12345{"12345"}, g9999{"9999"};
 
 		testcase.setname("Calculate bull and pgia")
-		.CHECK_OUTPUT(calculateBullAndPgia("1234","1234"), "4,0")      // 4 bull, 0 pgia
-		.CHECK_OUTPUT(calculateBullAndPgia("1234","4321"), "0,4")      // 0 bull, 4 pgia
+		.CHECK_OUTPUT(calculateBull_And_Cows("1234","1234"), "4,0")      // 4 bull, 0 pgia
+		.CHECK_OUTPUT(calculateBull_And_Cows("1234","4321"), "0,4")      // 0 bull, 4 pgia
 		;
 
 		testcase.setname("Play with dummy choosers and guessers")
