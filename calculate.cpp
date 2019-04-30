@@ -1,4 +1,3 @@
-using namespace bullpgia;
 #include <string>
 #include "calculate.hpp"
 #include <iostream>
