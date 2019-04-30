@@ -7,7 +7,7 @@ using std::string;
 namespace bullpgia {
 
 
-    string calculateBull_And_Cows(string str, string guess);
+    string calculateBull_And_Cows(string x, string y);
 
 
 };

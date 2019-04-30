@@ -1,30 +1,37 @@
-#include "calculate.hpp"
-
-using std::string,std::to_string;
 using namespace bullpgia;
-#include <cstdlib>
+#include <string>
+#include "calculate.hpp"
+#include <iostream>
 
-string bullpgia::calculateBull_And_Cows(string choice, string guess) {
-int Count_Pgia = 0; 
-int Count_Bull =0;
-    int size=choice.length();
-         for (size_t i = 0; i < size; i++){
-        for (size_t j = 0; j < size; j++)
-        {
-           if(choice[i] == guess[j]){
-               if(i == j){
-               Count_Pgia++;
-               break;
-               }
-               else{
-                Count_Bull++ ;        
-             }
-           }
-        }
-        
-    }
+using namespace std;
 
-string ans = to_string(Count_Pgia)+" , "+to_string(Count_Bull);
 
-    return ans;
+
+ string bullpgia::calculateBull_And_Cows(string x, string y) {
+  int bull=0;
+  int pgia=0;
+  for(int i=0;i<x.length();i++){
+     
+          if(x[i]==y[i]){
+              bull++;
+              y[i]=x[i]='/';
+      }
+   
 }
+if(bull!=x.length()){
+  for(int i=0;i<x.length();i++){
+      for(int j=0;j<x.length();j++){
+          if(x[i]!='/'&&x[i]==y[j]){
+              pgia++; 
+         y[j]='/';
+         continue;
+      }
+}
+}
+}
+string ans=to_string(bull);
+   ans+=",";
+   ans+=to_string(pgia);
+return ans;
+     
+ }
