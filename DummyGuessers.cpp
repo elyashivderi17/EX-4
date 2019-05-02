@@ -9,3 +9,4 @@ std::string RandomGuesser::guess() {
 	}
 	return r;
 }
+

@@ -6,6 +6,8 @@ using std::string;
 /**
  * ConstantGuesser is a guesser that always guesses the same string. 
  */
+
+
 class ConstantGuesser: public bullpgia::Guesser {
 		string myConstantString;
 	public:

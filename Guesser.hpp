@@ -2,31 +2,40 @@
 #pragma once
 #include <iostream>
 #include <stdlib.h>
-using namespace std; 
+using namespace std;
 using std::string;
 
-namespace bullpgia {
+namespace bullpgia
+{
 
-
-class Guesser{
+class Guesser
+{
 
 public:
+  unsigned int length;
+  int countBull = 0;
+  int countPgia = 0;
 
-  unsigned  int length;
-  int countBull;
-  int countPgia;
+  virtual string guess() = 0;
+  virtual void startNewGame(uint length)
+  {
+    this->length = length;
+  };
+  void learn(string results)
+  {
+    ////////////////////////////////////////////////////////////////////////// cout << "qqqqqqqqqqqqqqqqqqqqqq   qqqqqqqq  qqqqqqqqqqq" << endl
+    //      << endl
+    //      << endl;
+    string delimiter = ",";
+    string bull = results.substr(0, results.find(delimiter));
+    string pgia = results.substr(results.find(delimiter) + 1);
 
-	virtual string guess() = 0;
-        virtual void startNewGame(uint length) {
-            this->length=length;
-        };
-        virtual void learn(string results) {
+    this->countPgia = stoi(pgia);
 
-      
-
-        };
+    this->countBull = stoi(bull);
+    //////////////////////////////////////////////////////////////////cout << "++++++++   " << this->countBull << "     ++++++++" << endl
+        //  << endl;
+  };
 };
 
-
-
-}
+} // namespace bullpgia

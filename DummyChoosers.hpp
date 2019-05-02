@@ -19,6 +19,7 @@ class ConstantChooser: public bullpgia::Chooser {
  * RandomChooser is a chooser that chooses a random string.
  */
 class RandomChooser: public bullpgia::Chooser {
+	public:
 		string choose(uint length) override;
 };
 
