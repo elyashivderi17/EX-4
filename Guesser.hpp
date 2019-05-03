@@ -23,6 +23,7 @@ public:
   };
   void learn(string results)
   {
+    // cout<<results<<endl;
     ////////////////////////////////////////////////////////////////////////// cout << "qqqqqqqqqqqqqqqqqqqqqq   qqqqqqqq  qqqqqqqqqqq" << endl
     //      << endl
     //      << endl;

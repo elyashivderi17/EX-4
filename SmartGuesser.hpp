@@ -8,6 +8,7 @@ namespace bullpgia{
     string MyGuess=""; 
     int index;
     int bull;
+    bool flag;
 
     public :
     SmartGuesser();
