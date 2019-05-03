@@ -36,7 +36,6 @@ string bullpgia::calculateBull_And_Cows(string x, string y)
     ans += ",";
     ans += to_string(pgia);
 
-// cout<<"----------"<<ans<<"-----------"<<endl;
 
     return ans;
 }

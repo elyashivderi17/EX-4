@@ -23,10 +23,6 @@ public:
   };
   void learn(string results)
   {
-    // cout<<results<<endl;
-    ////////////////////////////////////////////////////////////////////////// cout << "qqqqqqqqqqqqqqqqqqqqqq   qqqqqqqq  qqqqqqqqqqq" << endl
-    //      << endl
-    //      << endl;
     string delimiter = ",";
     string bull = results.substr(0, results.find(delimiter));
     string pgia = results.substr(results.find(delimiter) + 1);
@@ -34,8 +30,6 @@ public:
     this->countPgia = stoi(pgia);
 
     this->countBull = stoi(bull);
-    //////////////////////////////////////////////////////////////////cout << "++++++++   " << this->countBull << "     ++++++++" << endl
-        //  << endl;
   };
 };
 

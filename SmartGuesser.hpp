@@ -12,9 +12,7 @@ namespace bullpgia{
 
     public :
     SmartGuesser();
-    // SmartGuesser(const string& temp){}
     ~SmartGuesser(){}
-    // void learn(string solutions) override;
     string guess() override;
     void startNewGame(uint length) override;
 
