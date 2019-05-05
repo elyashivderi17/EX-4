@@ -4,7 +4,7 @@
 
 using namespace std;
 
-string bullpgia::calculateBull_And_Cows(string x, string y)
+string bullpgia::calculateBullAndPgia(string x, string y)
 {
     int bull = 0;
     int pgia = 0;
